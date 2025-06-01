@@ -16,11 +16,11 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://payroll-frontend-self.vercel.app/", // Replace this with the correct port if different
-  credentials: true, // Allow credentials like cookies
-  optionsSuccessStatus: 200,
+  origin: "https://payroll-frontend-self.vercel.app",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
-
 app.get("/",(req,res)=>{
 res.send("The API is Running!")
 })
