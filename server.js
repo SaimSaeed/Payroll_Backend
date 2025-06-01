@@ -19,7 +19,7 @@ const corsOptions = {
   origin: "https://payroll-frontend-self.vercel.app",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  allowedHeaders: ["Content-Type"],
 };
 app.get("/",(req,res)=>{
 res.send("The API is Running!")
