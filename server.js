@@ -21,6 +21,10 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
+app.get("/",(req,res)=>{
+res.send("The API is Running!")
+})
+
 app.use(cors(corsOptions));
 app.use("/auth", authRoutes);
 app.use("/payrolls", payrollRoutes);
