@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://payroll-frontend-self.vercel.app/#/", // Replace this with the correct port if different
+  origin: "https://payroll-frontend-self.vercel.app/", // Replace this with the correct port if different
   credentials: true, // Allow credentials like cookies
   optionsSuccessStatus: 200,
 };
